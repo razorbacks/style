@@ -1,0 +1,21 @@
+{
+    "name": "razorbacks/style",
+    "description": "University of Arkansas layout and style",
+    "keywords": ["Arkansas", "style", "layout", "uark"],
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Jeff Puckett",
+            "email": "jpucket@uark.edu"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "razorbacks\\style\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
