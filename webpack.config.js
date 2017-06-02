@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var inProduction = (process.env.NODE_ENV === 'production');
+var PACKAGE = require('./package.json');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
@@ -10,7 +11,7 @@ module.exports = {
     },
     output: {
         path: __dirname + '/dist',
-        filename: '[name].js'
+        filename: '[name].' + PACKAGE.version + '.js'
     },
     module: {
         rules: [
@@ -23,9 +24,15 @@ module.exports = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin("[name].css"),
+        new ExtractTextPlugin('[name].' + PACKAGE.version + '.css'),
         new webpack.LoaderOptionsPlugin({
             minimize: inProduction
         }),
     ]
 };
+
+if (inProduction) {
+    module.exports.plugins.push(
+        new webpack.optimize.UglifyJsPlugin()
+    );
+}
