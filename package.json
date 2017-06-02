@@ -1,0 +1,33 @@
+{
+  "name": "style",
+  "version": "0.1.0",
+  "description": "template views and style sheets for arkansas.edu",
+  "scripts": {
+    "dev": "webpack",
+    "watch": "npm run dev -- --watch",
+    "prod": "NODE_ENV=production webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uawcob/style.git"
+  },
+  "keywords": [
+    "Arkansas",
+    "style",
+    "layout",
+    "uark"
+  ],
+  "author": "Jeff Puckett <jpucket@uark.edu>",
+  "license": "GPL-3.0+",
+  "bugs": {
+    "url": "https://github.com/uawcob/style/issues"
+  },
+  "homepage": "https://github.com/uawcob/style#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.5",
+    "webpack": "^2.6.1"
+  }
+}
