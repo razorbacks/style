@@ -37,3 +37,15 @@ If you need to customize the views, then you can run:
     php artisan vendor:publish --provider="razorbacks\style\laravel\StyleServiceProvider"
 
 Then they will show up in your `views/vendor/razorbacks` directory.
+
+## Default CDN
+
+The default CDN is https://cdn.walton.uark.edu and it's registered in 2 places.
+
+1. [`Manifest.php`][1]
+2. [`webpack.config.js`][2]
+
+This may be overridden by setting the environment variable `RAZORBACKS_STYLE_CDN`
+
+[1]:./php/Manifest.php
+[2]:./webpack.config.js

@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 var inProduction = (process.env.NODE_ENV === 'production');
 var outdir = __dirname + '/dist';
+var publicPath = process.env.RAZORBACKS_STYLE_CDN || 'https://cdn.walton.uark.edu';
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
@@ -12,6 +13,7 @@ module.exports = {
     },
     output: {
         path: outdir,
+        publicPath: publicPath,
         filename: '[name].[chunkhash].js'
     },
     module: {
