@@ -1,6 +1,5 @@
 var webpack = require('webpack');
 var inProduction = (process.env.NODE_ENV === 'production');
-var PACKAGE = require('./package.json');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
@@ -11,7 +10,7 @@ module.exports = {
     },
     output: {
         path: __dirname + '/dist',
-        filename: '[name].' + PACKAGE.version + '.js'
+        filename: '[name].[chunkhash].js'
     },
     module: {
         rules: [
@@ -24,7 +23,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin('[name].' + PACKAGE.version + '.css'),
+        new ExtractTextPlugin('[name].[contenthash].css'),
         new webpack.LoaderOptionsPlugin({
             minimize: inProduction
         }),
