@@ -1,6 +1,8 @@
 var webpack = require('webpack');
 var inProduction = (process.env.NODE_ENV === 'production');
+var outdir = __dirname + '/dist';
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -9,7 +11,7 @@ module.exports = {
         ]
     },
     output: {
-        path: __dirname + '/dist',
+        path: outdir,
         filename: '[name].[chunkhash].js'
     },
     module: {
@@ -27,6 +29,7 @@ module.exports = {
         new webpack.LoaderOptionsPlugin({
             minimize: inProduction
         }),
+        new CleanWebpackPlugin(outdir, {exclude:'images'}),
     ]
 };
 
