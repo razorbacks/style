@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+        backupStaticAttributes="false"
+        bootstrap="vendor/autoload.php"
+        colors="true"
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true"
+        processIsolation="false"
+        stopOnFailure="false">
+    <testsuites>
+        <testsuite name="Razorbacks Style Test Suite">
+            <directory>./tests/php/unit</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./php</directory>
+            <exclude>
+                <directory suffix=".blade.php">./php/laravel/blade</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-html" target="./tests/coverage"
+            lowUpperBound="35"   highLowerBound="90"/>
+        <log type="coverage-text" target="php://stdout"
+            showUncoveredFiles="false"/>
+    </logging>
+    <php>
+        <env name="RAZORBACKS_STYLE_CDN" value="https://cdn.example.org"/>
+        <env name="RAZORBACKS_STYLE_MANIFEST_FILE" value="./tests/php/fixtures/manifest.json"/>
+    </php>
+</phpunit>

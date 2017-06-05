@@ -2,6 +2,8 @@
 
 This is a library for University of Arkansas layout and style.
 
+[![Build Status][4]][2] [![Codecov][8]][7]
+
 ## Laravel Blade
 
 Register the service provider within your `config/app.php` file.
@@ -49,3 +51,7 @@ This may be overridden by setting the environment variable `RAZORBACKS_STYLE_CDN
 
 [1]:./php/Manifest.php
 [2]:./webpack.config.js
+[3]:https://travis-ci.org/razorbacks/style.svg?branch=master
+[4]:https://travis-ci.org/razorbacks/style
+[7]:https://codecov.io/gh/razorbacks/style/branch/master
+[8]:https://img.shields.io/codecov/c/github/razorbacks/style/master.svg
