@@ -32,6 +32,18 @@ module.exports = {
             minimize: inProduction
         }),
         new CleanWebpackPlugin(outdir, {exclude:'images'}),
+        function() {
+            this.plugin('done', stats => {
+                var dump = stats.toJson().assetsByChunkName.uark;
+                var manifest = {};
+                manifest.js  = dump[0];
+                manifest.css = dump[1];
+                require('fs').writeFileSync(
+                    __dirname + '/manifest.json',
+                    JSON.stringify(manifest)
+                );
+            });
+        }
     ]
 };
 
