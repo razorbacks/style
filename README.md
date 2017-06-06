@@ -6,6 +6,10 @@ This is a library for University of Arkansas layout and style.
 
 ## Laravel Blade
 
+Add the library with [composer][9].
+
+    composer require razorbacks/style
+
 Register the service provider within your `config/app.php` file.
 
 ```php
@@ -34,6 +38,19 @@ Register the service provider within your `config/app.php` file.
 ],
 ```
 
+Extend the `razorbacks::layout` view with a `content` section.
+
+```html
+@extends('razorbacks::layout')
+
+@section('content')
+
+<h1>hello world</h1>
+<p>here is some content</p>
+
+@endsection
+```
+
 If you need to customize the views, then you can run:
 
     php artisan vendor:publish --provider="razorbacks\style\laravel\StyleServiceProvider"
@@ -55,3 +72,4 @@ This may be overridden by setting the environment variable `RAZORBACKS_STYLE_CDN
 [4]:https://travis-ci.org/razorbacks/style
 [7]:https://codecov.io/gh/razorbacks/style/branch/master
 [8]:https://img.shields.io/codecov/c/github/razorbacks/style/master.svg
+[9]:https://getcomposer.org/
