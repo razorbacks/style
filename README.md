@@ -2,7 +2,7 @@
 
 This is a library for University of Arkansas layout and style.
 
-[![Build Status][4]][2] [![Codecov][8]][7]
+[![Build Status][3]][4] [![Codecov][8]][7]
 
 ## Laravel Blade
 
