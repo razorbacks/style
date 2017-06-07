@@ -42,31 +42,16 @@
             <div id="navbar" class="collapse navbar-collapse">
 
                 <ul id='top_navigation_menu' class='top_nav nav navbar-nav navigation-menu'>
-                    @if (Auth::guest())
-                        <li><a href="{{ url('/register') }}">Register</a></li>
-                    @else
-                        <li><a href="{{ url('/home') }}">Home</a></li>
-                    @endif
+
+                    @yield('navbar')
+
                 </ul>
 
                 <div id='login_nav_div' class='top_nav navbar-right pull-right-md pull-left-xs'>
                     <ul class="nav navbar-nav navbar-right navigation-menu">
-                        <!-- Authentication Links -->
-                        @if (Auth::guest())
-                            <li><a href="{{ url('/login') }}">Login</a></li>
-                        @else
-                            <li>
-                                <a href="{{ url('/logout') }}"
-                                    onclick="event.preventDefault();
-                                            document.getElementById('logout-form').submit();">
-                                    Logout {{ Auth::user()->first_name }}
-                                </a>
 
-                                <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
-                                    {{ csrf_field() }}
-                                </form>
-                            </li>
-                        @endif
+                        @yield('navbar-right')
+
                     </ul>
                 </div>
 

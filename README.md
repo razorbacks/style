@@ -1,6 +1,7 @@
 # Razorbacks Style
 
 This is a library for University of Arkansas layout and style.
+All style sheets, javascripts, and images are served through a CDN.
 
 [![Build Status][3]][4] [![Codecov][8]][7]
 
@@ -38,16 +39,54 @@ Register the service provider within your `config/app.php` file.
 ],
 ```
 
-Extend the `razorbacks::layout` view with a `content` section.
+Extend the `razorbacks::layout` view and the following sections are available:
+
+1. `content`
+2. `navbar`
+3. `navbar-right`
 
 ```html
 @extends('razorbacks::layout')
 
+@section('navbar')
+    <li><a href="https://example.com">Example</a></li>
+@endsection
+
+@section('navbar-right')
+    <li><a href="https://example.com">Right</a></li>
+@endsection
+
 @section('content')
+    <h1>hello world</h1>
+    <p>here is some content</p>
+@endsection
+```
 
-<h1>hello world</h1>
-<p>here is some content</p>
+![example layout screenshot][10]
 
+If you would like to use the default laravel authentication scaffolding,
+then there is a `navbar-auth` partial included for the login/logout links.
+
+```html
+@extends('razorbacks::layout')
+
+@section('navbar-right')
+    @include('razorbacks::navbar-auth')
+@endsection
+```
+
+For convenience, this exact template is included for extension as `layout-auth`
+
+```html
+@extends('razorbacks::layout-auth')
+
+@section('navbar')
+    <li><a href="https://example.com">Example</a></li>
+@endsection
+
+@section('content')
+    <h1>hello world</h1>
+    <p>here is some content</p>
 @endsection
 ```
 
@@ -73,3 +112,4 @@ This may be overridden by setting the environment variable `RAZORBACKS_STYLE_CDN
 [7]:https://codecov.io/gh/razorbacks/style/branch/master
 [8]:https://img.shields.io/codecov/c/github/razorbacks/style/master.svg
 [9]:https://getcomposer.org/
+[10]:./docs/images/example-layout.jpg
