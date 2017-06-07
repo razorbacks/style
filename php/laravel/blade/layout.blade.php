@@ -21,9 +21,9 @@
 <body>
     <div id="header-bg"></div>
     <div class="container" id="opener" role="banner">
-        <a class="brand" href="http://www.uark.edu/">University of Arkansas</a>
+        <a class="brand" href="https://www.uark.edu/">University of Arkansas</a>
         <span id="site-heading" class="walton-name"><a href="/">{{ config('app.name') }}</a></span>
-        <span class="walton-sub-name"><a href="//walton.uark.edu">The Sam M. Walton College of Business</a></span>
+        <span class="walton-sub-name"><a href="https://walton.uark.edu">The Sam M. Walton College of Business</a></span>
     </div><!-- /#opener banner -->
 
     <nav class="navbar navbar-default">
@@ -85,7 +85,7 @@
             <div class="row" style="padding-top: 30px; padding-bottom: 40px;">
                 <div class="col-md-3 col-md-push-6 col-md-offset-3">
                     <p style="margin-bottom: 35px; margin-top: 50px;">
-                        <a href="//walton.uark.edu/directory/" class="btn navbar-btn btn-default" style="margin-top: -15px;">Walton Directory</a>
+                        <a href="https://walton.uark.edu/directory/" class="btn navbar-btn btn-default" style="margin-top: -15px;">Walton Directory</a>
                         <span style="display:inline-block;">
                             <a style="color: #b7b7b7" title="facebook" href="https://www.facebook.com/WaltonCollege">
                                 <i class="fa fa-3x fa-facebook-square"><!-- content --></i>
@@ -103,7 +103,7 @@
                     </p>
                 </div>
                 <div class="col-md-6 col-md-pull-6">
-                    <a href="//walton.uark.edu"><img alt="Sam M. Walton College of Business: AACSB Accredited" src="{{ razorbacks\style\Manifest::cdn() }}/images/wc-footer-logo.jpg" style="margin-top: 18px;"></a>
+                    <a href="https://walton.uark.edu"><img alt="Sam M. Walton College of Business: AACSB Accredited" src="{{ razorbacks\style\Manifest::cdn() }}/images/wc-footer-logo.jpg" style="margin-top: 18px;"></a>
                 </div>
             </div>
         </div>
@@ -114,16 +114,16 @@
             <div class="row">
                 <div class="col-md-12">
                     <div id="footer-logo">
-                        <a href="http://uark.edu">UNIVERSITY OF ARKANSAS</a>
+                        <a href="https://uark.edu">UNIVERSITY OF ARKANSAS</a>
                     </div>
 
                     <ul id="footer-global-links" class="list-unstyled">
-                        <li><a href="http://www.uark.edu/admissions/index.php">Admissions</a></li>
-                        <li><a href="http://www.uark.edu/academics/index.php">Academics</a></li>
-                        <li><a href="http://www.uark.edu/campus-life/index.php">Campus Life</a></li>
-                        <li><a href="http://www.uark.edu/research/index.php">Research</a></li>
-                        <li><a href="http://www.uark.edu/athletics/index.php">Athletics</a></li>
-                        <li><a href="http://www.uark.edu/about/index.php">About</a></li>
+                        <li><a href="https://www.uark.edu/admissions/index.php">Admissions</a></li>
+                        <li><a href="https://www.uark.edu/academics/index.php">Academics</a></li>
+                        <li><a href="https://www.uark.edu/campus-life/index.php">Campus Life</a></li>
+                        <li><a href="https://www.uark.edu/research/index.php">Research</a></li>
+                        <li><a href="https://www.uark.edu/athletics/index.php">Athletics</a></li>
+                        <li><a href="https://www.uark.edu/about/index.php">About</a></li>
                     </ul>
 
                     <ul id="social-stack" class="nav clearfix list-unstyled">
@@ -134,19 +134,19 @@
                             </a>
                         </li>
                         <li>
-                            <a href="http://twitter.com/uarkansas">
+                            <a href="https://twitter.com/uarkansas">
                                 <i class="fa fa-twitter"></i>
                                 <span class="sr-only">Follow us on Twitter</span>
                             </a>
                         </li>
                         <li>
-                            <a href="http://www.youtube.com/user/UniversityArkansas">
+                            <a href="https://www.youtube.com/user/UniversityArkansas">
                                 <i class="fa fa-youtube"></i>
                                 <span class="sr-only">Watch us on YouTube</span>
                             </a>
                         </li>
                         <li>
-                            <a href="http://instagram.com/uarkansas">
+                            <a href="https://instagram.com/uarkansas">
                                 <i class="fa fa-instagram"></i>
                                 <span class="sr-only">See us on Instagram</span>
                             </a>
@@ -158,13 +158,13 @@
                             </a>
                         </li>	
                         <li>
-                            <a href="http://pinterest.com/uofaadmissions/">
+                            <a href="https://pinterest.com/uofaadmissions/">
                                 <i class="fa fa-pinterest"></i>
                                 <span class="sr-only">Join us on Pinterest</span>
                             </a>
                         </li>
                         <li>
-                            <a href="http://www.linkedin.com/company/university-of-arkansas">
+                            <a href="https://www.linkedin.com/company/university-of-arkansas">
                                 <i class="fa fa-linkedin"></i>
                                 <span class="sr-only">Connect with us on LinkedIn</span>
                             </a>
@@ -188,7 +188,7 @@
         <script src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js'></script>
         <script src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js'></script>
     <![endif]-->
-    <script src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
 
     <script>
         window.Laravel = <?php echo json_encode([
