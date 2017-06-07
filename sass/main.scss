@@ -225,6 +225,14 @@ footer .nav > li > a:focus {
     float: left;
     margin-right: 2em;
 }
+.walton-social-media {
+    display:inline-block;
+}
+.walton-social-media a,
+.walton-social-media a:hover {
+    color: #b7b7b7;
+    text-decoration: none;
+}
 
 .datatable .sorting,
 .datatable .sorting_asc,

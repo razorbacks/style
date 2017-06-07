@@ -86,18 +86,18 @@
                 <div class="col-md-3 col-md-push-6 col-md-offset-3">
                     <p>
                         <a href="https://walton.uark.edu/directory/" class="btn navbar-btn btn-default">Walton Directory</a>
-                        <span style="display:inline-block;">
-                            <a style="color: #b7b7b7" title="facebook" href="https://www.facebook.com/WaltonCollege">
-                                <i class="fa fa-3x fa-facebook-square"><!-- content --></i>
+                        <span class="walton-social-media">
+                            <a title="Facebook" href="https://www.facebook.com/WaltonCollege">
+                                <i class="fa fa-3x fa-facebook-square"></i>
                             </a>
-                            <a style="color: #b7b7b7" title="twitter" href="https://twitter.com/uawaltoncollege">
-                                <i class="fa fa-3x fa-twitter-square"><!-- content --></i>
+                            <a title="Twitter" href="https://twitter.com/uawaltoncollege">
+                                <i class="fa fa-3x fa-twitter-square"></i>
                             </a>
-                            <a style="color: #b7b7b7" title="Linkedin" href="https://www.linkedin.com/grp/home?gid=108950">
-                                <i class="fa fa-3x fa-fa fa-linkedin-square"><!-- content --></i>
+                            <a title="LinkedIn" href="https://www.linkedin.com/grp/home?gid=108950">
+                                <i class="fa fa-3x fa-linkedin-square"></i>
                             </a>
-                            <a style="color: #b7b7b7" title="instagram" href="https://instagram.com/uawaltoncollege/">
-                                <i class="fa fa-3x fa-instagram"><!-- content --></i>
+                            <a title="Instagram" href="https://instagram.com/uawaltoncollege/">
+                                <i class="fa fa-3x fa-instagram"></i>
                             </a>
                         </span>
                     </p>
