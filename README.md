@@ -44,9 +44,15 @@ Extend the `razorbacks::layout` view and the following sections are available:
 1. `content`
 2. `navbar`
 3. `navbar-right`
+4. `head` loaded before `</head>`
+5. `scripts` loaded before `</body>`
 
 ```html
 @extends('razorbacks::layout')
+
+@section('head')
+    <link rel="stylesheet" href="https://example.com/style.css">
+@endsection
 
 @section('navbar')
     <li><a href="https://example.com">Example</a></li>
@@ -59,6 +65,10 @@ Extend the `razorbacks::layout` view and the following sections are available:
 @section('content')
     <h1>hello world</h1>
     <p>here is some content</p>
+@endsection
+
+@section('scripts')
+    <script src="https://example.com/script.js"></script>
 @endsection
 ```
 

@@ -17,6 +17,8 @@
     {!! razorbacks\style\Manifest::cssLink() !!}
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    @yield('head')
 </head>
 <body>
     <div id="header-bg"></div>
@@ -210,5 +212,8 @@
             });
         });
     </script>
+
+    @yield('scripts')
+
 </body>
 </html>
