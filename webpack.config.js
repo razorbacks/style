@@ -40,7 +40,7 @@ module.exports = {
                 manifest.css = dump[1];
                 require('fs').writeFileSync(
                     __dirname + '/manifest.json',
-                    JSON.stringify(manifest)
+                    JSON.stringify(manifest, null, 2)
                 );
             });
         }
