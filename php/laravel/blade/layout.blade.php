@@ -103,7 +103,12 @@
                     </p>
                 </div>
                 <div class="col-md-6 col-md-pull-6">
-                    <a href="https://walton.uark.edu"><img alt="Sam M. Walton College of Business: AACSB Accredited" src="{{ razorbacks\style\Manifest::cdn() }}/images/wc-footer-logo.jpg"></a>
+                    <a href="https://walton.uark.edu">
+                        <img alt="Sam M. Walton College of Business: AACSB Accredited"
+                            class="img img-responsive"
+                            src="{{ razorbacks\style\Manifest::cdn() }}/images/wc-footer-logo.jpg"
+                        >
+                    </a>
                 </div>
             </div>
         </div>
