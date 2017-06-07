@@ -82,10 +82,10 @@
 
     <section class="gray" id="section-footer">
         <div class="container">
-            <div class="row" style="padding-top: 30px; padding-bottom: 40px;">
+            <div class="row">
                 <div class="col-md-3 col-md-push-6 col-md-offset-3">
-                    <p style="margin-bottom: 35px; margin-top: 50px;">
-                        <a href="https://walton.uark.edu/directory/" class="btn navbar-btn btn-default" style="margin-top: -15px;">Walton Directory</a>
+                    <p>
+                        <a href="https://walton.uark.edu/directory/" class="btn navbar-btn btn-default">Walton Directory</a>
                         <span style="display:inline-block;">
                             <a style="color: #b7b7b7" title="facebook" href="https://www.facebook.com/WaltonCollege">
                                 <i class="fa fa-3x fa-facebook-square"><!-- content --></i>
@@ -103,7 +103,7 @@
                     </p>
                 </div>
                 <div class="col-md-6 col-md-pull-6">
-                    <a href="https://walton.uark.edu"><img alt="Sam M. Walton College of Business: AACSB Accredited" src="{{ razorbacks\style\Manifest::cdn() }}/images/wc-footer-logo.jpg" style="margin-top: 18px;"></a>
+                    <a href="https://walton.uark.edu"><img alt="Sam M. Walton College of Business: AACSB Accredited" src="{{ razorbacks\style\Manifest::cdn() }}/images/wc-footer-logo.jpg"></a>
                 </div>
             </div>
         </div>
