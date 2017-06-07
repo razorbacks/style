@@ -199,8 +199,9 @@
         });
 
         $(".top_nav").find("a").each(function(){
-            if ( $(this).attr("href") == "<?php echo $_SERVER['SCRIPT_NAME'];?>" || $(this).attr("href") == "<?php echo dirname($_SERVER['SCRIPT_NAME'])."/";?>" )
-            $(this).parent().addClass("active");
+            if ( $(this).attr("href") == "{{ Request::fullUrl() }}") {
+                $(this).parent().addClass("active");
+            }
         });
 
         $(document).ready(function(){

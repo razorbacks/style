@@ -111,8 +111,9 @@ body {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    border-color: $navbar-border-color;
     color: $hover-color;
+    border-color: $navbar-border-color;
+    background-color: white;
 }
 .navbar {
     z-index: 9;
