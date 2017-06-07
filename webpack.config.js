@@ -8,6 +8,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = {
     entry: {
         uark: [
+            './js/main.js',
             './sass/main.scss',
         ]
     },

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-    {!! razorbacks\style\Manifest::cssLink() !!}
+    {!! razorbacks\style\Manifest::css() !!}
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
@@ -183,25 +183,14 @@
             'csrfToken' => csrf_token(),
         ]); ?>
 
-        function auto_expand_textarea( ta ){ ta.keyup(function(e) {
-            while($(this).outerHeight() < this.scrollHeight + parseFloat($(this).css('borderTopWidth')) + parseFloat($(this).css('borderBottomWidth'))) {
-                $(this).height($(this).height()+1);
-            };
-        })}
-
-        $(function(){
-            $('textarea').each(function(){
-                var ta = $(this);
-                auto_expand_textarea( ta );
-            });
-        });
-
         $(".top_nav").find("a").each(function(){
             if ( $(this).attr("href") == "{{ Request::fullUrl() }}") {
                 $(this).parent().addClass("active");
             }
         });
     </script>
+
+    {!! razorbacks\style\Manifest::script() !!}
 
     @yield('scripts')
 
