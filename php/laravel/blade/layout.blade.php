@@ -182,12 +182,6 @@
         window.Laravel = <?php echo json_encode([
             'csrfToken' => csrf_token(),
         ]); ?>
-
-        $(".top_nav").find("a").each(function(){
-            if ( $(this).attr("href") == "{{ Request::fullUrl() }}") {
-                $(this).parent().addClass("active");
-            }
-        });
     </script>
 
     {!! razorbacks\style\Manifest::script() !!}
