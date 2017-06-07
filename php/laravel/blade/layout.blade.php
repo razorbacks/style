@@ -86,7 +86,6 @@
                 <div class="col-md-3 col-md-push-6 col-md-offset-3">
                     <p style="margin-bottom: 35px; margin-top: 50px;">
                         <a href="//walton.uark.edu/directory/" class="btn navbar-btn btn-default" style="margin-top: -15px;">Walton Directory</a>
-                        <a href="https://intranet.waltoncollege.uark.edu:8001" class="btn navbar-btn btn-default" style="margin-top: -15px; margin-right: 10px;">Walton Intranet</a>
                         <span style="display:inline-block;">
                             <a style="color: #b7b7b7" title="facebook" href="https://www.facebook.com/WaltonCollege">
                                 <i class="fa fa-3x fa-facebook-square"><!-- content --></i>
