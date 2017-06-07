@@ -10,10 +10,8 @@
     <title>{{ config('app.name') }}</title>
     <link rel="shortcut icon" href="{{ razorbacks\style\Manifest::cdn() }}/images/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css"></link>
     {!! razorbacks\style\Manifest::cssLink() !!}
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
@@ -173,14 +171,12 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
         <script src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js'></script>
         <script src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js'></script>
     <![endif]-->
-    <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
 
     <script>
         window.Laravel = <?php echo json_encode([
@@ -204,12 +200,6 @@
             if ( $(this).attr("href") == "{{ Request::fullUrl() }}") {
                 $(this).parent().addClass("active");
             }
-        });
-
-        $(document).ready(function(){
-            $('.datatable').DataTable({
-                "order": [[ 1, "desc" ]]
-            });
         });
     </script>
 
