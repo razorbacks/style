@@ -1,10 +1,16 @@
+$html-background-color: #424242;
+$body-color: #5a5a5a;
+$hover-color: #aa0000;
+$navbar-border-color: #af0001;
+$section-background-gray: #a1a1a1;
+
 html {
-    background-color: #424242;
+    background-color: $html-background-color;
     height: 100%;
 }
 body {
     font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #5a5a5a;
+    color: $body-color;
     font-size: 16px;
     background-color: white;
 }
@@ -67,7 +73,7 @@ body {
     }
 
     .navbar-default .navbar-nav>li>a:hover {
-        border-color: #af0001;
+        border-color: $navbar-border-color;
     }
     .navbar {
         margin-top: 115px;
@@ -90,7 +96,7 @@ body {
 .walton-name a:hover,
 .walton-sub-name a:hover {
     text-decoration: none;
-    color: #aa0000;
+    color: $hover-color;
 }
 .walton-sub-name {
     position: absolute;
@@ -105,12 +111,12 @@ body {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    border-color: #af0001;
-    color: #aa0000;
+    border-color: $navbar-border-color;
+    color: $hover-color;
 }
 .navbar {
     z-index: 9;
-    background-color: #fff;
+    background-color: white;
     -webkit-box-shadow: 0 0px 7px rgba(0,0,0,.3);
     -moz-box-shadow: 0 0px 7px rgba(0,0,0,.3);
     box-shadow: 0 0px 7px rgba(0,0,0,.3);
@@ -125,11 +131,11 @@ body {
 }
 .navbar li:hover,
 .navbar a {
-    background-color: #fff;
-    border-top: 5px solid #fff;
+    background-color: white;
+    border-top: 5px solid white;
 }
 .navbar-default .navbar-nav>li>a:hover {
-    color: #aa0000;
+    color: $hover-color;
     margin-top: -5px;
 }
 
@@ -153,10 +159,10 @@ section.gray:after {
     height: 10px;
     width: 100%;
     top: -23px;
-    background: #a1a1a1;
-    -webkit-box-shadow: 0 8px 11px #a1a1a1;
-    -moz-box-shadow: 0 8px 11px #a1a1a1;
-    box-shadow: 0 8px 11px #a1a1a1;
+    background: $section-background-gray;
+    -webkit-box-shadow: 0 8px 11px $section-background-gray;
+    -moz-box-shadow: 0 8px 11px $section-background-gray;
+    box-shadow: 0 8px 11px $section-background-gray;
     -webkit-transform: rotate(-.8deg);
     -moz-transform: rotate(-.8deg);
     -o-transform: rotate(-.8deg);
@@ -178,9 +184,9 @@ section.gray:after {
     top: auto;
     bottom: -21px;
     background: #A7A7A7;
-    -webkit-box-shadow: 0 -5px 11px #a1a1a1;
-    -moz-box-shadow: 0 -5px 11px #a1a1a1;
-    box-shadow: 0 -5px 11px #a1a1a1;
+    -webkit-box-shadow: 0 -5px 11px $section-background-gray;
+    -moz-box-shadow: 0 -5px 11px $section-background-gray;
+    box-shadow: 0 -5px 11px $section-background-gray;
 }
 section.gray:after {
     right: 4px;
@@ -188,8 +194,8 @@ section.gray:after {
 }
 
 footer {
-    background-color: #424242;
-    color: #fff;
+    background-color: $html-background-color;
+    color: white;
     font-weight: 300;
     display: block;
     min-height: 100%;
@@ -207,7 +213,7 @@ footer a:hover {
     font-size: x-large;
 }
 footer #social-stack li i:hover {
-    text-shadow: 0 0 4px #fff;
+    text-shadow: 0 0 4px white;
 }
 footer .nav > li > a:hover,
 footer .nav > li > a:focus {
@@ -280,5 +286,5 @@ tr.odd {
 }
 
 .row-striped:nth-of-type(odd) {
-    background-color: #ffffff;
+    background-color: white;
 }
