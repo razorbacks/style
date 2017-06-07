@@ -14,7 +14,7 @@ module.exports = {
     output: {
         path: outdir,
         publicPath: publicPath,
-        filename: '[name].[chunkhash].js'
+        filename: 'js/[name].[chunkhash].js'
     },
     module: {
         rules: [
@@ -27,7 +27,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin('[name].[contenthash].css'),
+        new ExtractTextPlugin('css/[name].[contenthash].css'),
         new webpack.LoaderOptionsPlugin({
             minimize: inProduction
         }),
