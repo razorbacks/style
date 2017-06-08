@@ -44,8 +44,8 @@ Extend the `razorbacks::layout` view and the following sections are available:
 1. `content`
 2. `navbar`
 3. `navbar-right`
-4. `head` loaded before `</head>`
-5. `scripts` loaded before `</body>`
+4. `head`
+5. `scripts` loaded after `</body>`
 
 ```html
 @extends('razorbacks::layout')
@@ -105,6 +105,19 @@ If you need to customize the views, then you can run:
     php artisan vendor:publish --provider="razorbacks\style\laravel\StyleServiceProvider"
 
 Then they will show up in your `views/vendor/razorbacks` directory.
+Note that they are minified for efficiency, so you will likely want to
+decompress them for development. Also the content hashes are hard-coded,
+so use the [`Manifest` class][1] to get references to versioned assets.
+
+```html
+{!! razorbacks\style\Manifest::css() !!}
+```
+
+will output:
+
+```html
+<link rel="stylesheet" href="https://cdn.example.org/css/uark.3990e4a5bd9002a3753cf135b6096f73.css">
+```
 
 ## Default CDN
 

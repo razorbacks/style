@@ -20,10 +20,10 @@ class StyleServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__.'/blade', 'razorbacks');
+        $this->loadViewsFrom(__DIR__.'/blade/dist', 'razorbacks');
 
         $this->publishes([
-            __DIR__.'/blade' => base_path('resources/views/vendor/razorbacks')
+            __DIR__.'/blade/dist' => base_path('resources/views/vendor/razorbacks')
         ]);
     }
 }

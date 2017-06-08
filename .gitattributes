@@ -13,3 +13,4 @@
 release.bash                     export-ignore
 /sass                            export-ignore
 /webpack.config.js               export-ignore
+/php/laravel/blade/src           export-ignore
