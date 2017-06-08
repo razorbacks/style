@@ -6,7 +6,7 @@ use razorbacks\style\Exceptions\InvalidJson;
 
 class Manifest
 {
-    const VERSION = '0.0.0+dev';
+    const VERSION = '0.0.0-dev';
     protected static $CDN;
     protected static $CSS;
     protected static $JS;
