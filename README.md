@@ -11,7 +11,9 @@ Add the library with [composer][9].
 
     composer require razorbacks/style
 
-Register the service provider within your `config/app.php` file.
+If you're using laravel 5.5 or greater, then installation is complete.
+However, if you're using laravel 5.4 or older, then you'll need to manually
+register the service provider within your `config/app.php` file.
 
 ```php
 /*
