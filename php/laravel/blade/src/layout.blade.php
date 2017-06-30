@@ -17,6 +17,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ razorbacks\style\Manifest::cdn() }}/images/16x16.png">
     <link rel="manifest" href="{{ razorbacks\style\Manifest::cdn() }}/images/manifest.json">
     <link rel="mask-icon" href="{{ razorbacks\style\Manifest::cdn() }}/images/safari-pinned-tab.svg" color="#9d2235">
+    <meta name="msapplication-config" content="{{ razorbacks\style\Manifest::cdn() }}/images/icons/browserconfig.xml" />
     <meta name="theme-color" content="#9d2235">
 
 </head>
