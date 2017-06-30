@@ -46,8 +46,8 @@ Extend the `razorbacks::layout` view and the following sections are available:
 1. `content`
 2. `navbar`
 3. `navbar-right`
-4. `head`
-5. `scripts` loaded after `</body>`
+4. `head` ([section][12] and [push][11])
+5. `scripts` ([section][12] and [push][11])
 
 ```html
 @extends('razorbacks::layout')
@@ -143,3 +143,5 @@ https://realfavicongenerator.net
 [8]:https://img.shields.io/codecov/c/github/razorbacks/style/master.svg
 [9]:https://getcomposer.org/
 [10]:./docs/images/example-layout.jpg
+[11]:https://laravel.com/docs/5.4/blade#stacks
+[12]:https://laravel.com/docs/5.4/blade#template-inheritance
