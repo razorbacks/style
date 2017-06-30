@@ -130,6 +130,11 @@ The default CDN is https://cdn.walton.uark.edu and it's registered in 2 places.
 
 This may be overridden by setting the environment variable `RAZORBACKS_STYLE_CDN`
 
+## Favicon
+
+Standard favicons and those optimized for touch devices were generated using
+https://realfavicongenerator.net
+
 [1]:./php/Manifest.php
 [2]:./webpack.config.js
 [3]:https://travis-ci.org/razorbacks/style.svg?branch=master
