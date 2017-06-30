@@ -16,6 +16,7 @@
 </head>
 
     @yield('head')
+    @stack('head')
 
 <body>
     <div id="header-bg"></div>
@@ -187,5 +188,6 @@
 </body>
 
 @yield('scripts')
+@stack('scripts')
 
 </html>
