@@ -37,6 +37,7 @@ module.exports = {
         new CleanWebpackPlugin([outdir, bladedir], {exclude:'images'}),
 
         new HtmlWebpackPlugin({
+            cdn: publicPath,
             template: './php/laravel/blade/src/layout.blade.php',
             filename: 'blade/layout.blade.php',
             minify: {

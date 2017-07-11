@@ -123,12 +123,14 @@ will output:
 
 ## Default CDN
 
-The default CDN is https://cdn.walton.uark.edu and it's registered in 2 places.
+The default CDN is https://cdn.walton.uark.edu and it may be overridden by
+setting the environment variable `RAZORBACKS_STYLE_CDN`
 
-1. [`Manifest.php`][1]
-2. [`webpack.config.js`][2]
+    npm run dev
 
-This may be overridden by setting the environment variable `RAZORBACKS_STYLE_CDN`
+For production, change it in [`release.bash`][13]
+
+    ./release.bash 1.0.1
 
 ## Favicon
 
@@ -136,7 +138,6 @@ Standard favicons and those optimized for touch devices were generated using
 https://realfavicongenerator.net
 
 [1]:./php/Manifest.php
-[2]:./webpack.config.js
 [3]:https://travis-ci.org/razorbacks/style.svg?branch=master
 [4]:https://travis-ci.org/razorbacks/style
 [7]:https://codecov.io/gh/razorbacks/style/branch/master
@@ -145,3 +146,4 @@ https://realfavicongenerator.net
 [10]:./docs/images/example-layout.jpg
 [11]:https://laravel.com/docs/5.4/blade#stacks
 [12]:https://laravel.com/docs/5.4/blade#template-inheritance
+[13]:./release.bash

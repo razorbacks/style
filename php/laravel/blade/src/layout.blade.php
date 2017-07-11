@@ -8,16 +8,16 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name') }}</title>
-    <link rel="shortcut icon" href="{{ razorbacks\style\Manifest::cdn() }}/images/icons/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="<%= htmlWebpackPlugin.options.cdn %>/images/icons/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ razorbacks\style\Manifest::cdn() }}/images/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ razorbacks\style\Manifest::cdn() }}/images/icons/32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ razorbacks\style\Manifest::cdn() }}/images/icons/16x16.png">
-    <link rel="manifest" href="{{ razorbacks\style\Manifest::cdn() }}/images/icons/manifest.json">
-    <link rel="mask-icon" href="{{ razorbacks\style\Manifest::cdn() }}/images/icons/safari-pinned-tab.svg" color="#9d2235">
-    <meta name="msapplication-config" content="{{ razorbacks\style\Manifest::cdn() }}/images/icons/browserconfig.xml" />
+    <link rel="apple-touch-icon" sizes="180x180" href="<%= htmlWebpackPlugin.options.cdn %>/images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<%= htmlWebpackPlugin.options.cdn %>/images/icons/32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<%= htmlWebpackPlugin.options.cdn %>/images/icons/16x16.png">
+    <link rel="manifest" href="<%= htmlWebpackPlugin.options.cdn %>/images/icons/manifest.json">
+    <link rel="mask-icon" href="<%= htmlWebpackPlugin.options.cdn %>/images/icons/safari-pinned-tab.svg" color="#9d2235">
+    <meta name="msapplication-config" content="<%= htmlWebpackPlugin.options.cdn %>/images/icons/browserconfig.xml" />
     <meta name="theme-color" content="#9d2235">
 
 </head>
@@ -98,7 +98,7 @@
                     <a href="https://walton.uark.edu">
                         <img alt="Sam M. Walton College of Business: AACSB Accredited"
                             class="img img-responsive"
-                            src="{{ razorbacks\style\Manifest::cdn() }}/images/wc-footer-logo.jpg"
+                            src="<%= htmlWebpackPlugin.options.cdn %>/images/wc-footer-logo.jpg"
                         >
                     </a>
                 </div>
@@ -153,7 +153,7 @@
                                 <i class="fa fa-google-plus"></i>
                                 <span class="sr-only">Connect with us on Google+</span>
                             </a>
-                        </li>	
+                        </li>
                         <li>
                             <a href="https://pinterest.com/uofaadmissions/">
                                 <i class="fa fa-pinterest"></i>

@@ -12,6 +12,9 @@ fi
 # move to working directory
 cd $( dirname "${BASH_SOURCE[0]}" )
 
+# set RAZORBACKS_STYLE_CDN Manifest class constant
+sed -r -i "s~const RAZORBACKS_STYLE_CDN = '.*'~const RAZORBACKS_STYLE_CDN = '$RAZORBACKS_STYLE_CDN'~" php/Manifest.php
+
 # add version to script
 sed -r -i "s/const VERSION = '.+\-dev'/const VERSION = '$1'/" php/Manifest.php
 # I don't like npm's tag prefix 'v'
