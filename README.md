@@ -117,6 +117,20 @@ And don't forget to push your description content meta tags.
 @endpush
 ```
 
+If `APP_ENV` is set to anything except `production` then a notice is displayed.
+You can customize the message by passing the `$notice` variable to your views
+and even set it site-wide by sharing the variable with your views in
+[the `boot` method of your `AppServiceProvider`][14]
+
+```php
+use View;
+
+public function boot()
+{
+    View::share('notice', 'Lorem ipsum dolor sit amet.');
+}
+```
+
 If you need to customize the views, then you can run:
 
     php artisan vendor:publish --tag=views --provider="razorbacks\style\laravel\StyleServiceProvider"
@@ -172,3 +186,4 @@ https://realfavicongenerator.net
 [11]:https://laravel.com/docs/5.4/blade#stacks
 [12]:https://laravel.com/docs/5.4/blade#template-inheritance
 [13]:./release.bash
+[14]:https://laravel.com/docs/5.4/views#passing-data-to-views

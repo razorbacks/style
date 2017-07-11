@@ -63,6 +63,15 @@ module.exports = {
                 removeComments: inProduction
             }
         }),
+        new HtmlWebpackPlugin({
+            template: './php/laravel/blade/src/notice-banner.blade.php',
+            filename: 'blade/notice-banner.blade.php',
+            inject: false,
+            minify: {
+                collapseWhitespace: inProduction,
+                removeComments: inProduction
+            }
+        }),
 
         function() {
             this.plugin('done', stats => {

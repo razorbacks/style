@@ -26,6 +26,10 @@
     @stack('head')
 
 <body>
+    @unless (App::Environment() === 'production')
+        @include ('razorbacks::notice-banner')
+    @endunless
+
     <div id="header-bg"></div>
     <div class="container" id="opener" role="banner">
         <a class="brand" href="https://www.uark.edu/">University of Arkansas</a>
