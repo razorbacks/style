@@ -102,6 +102,21 @@ For convenience, this exact template is included for extension as `layout-auth`
 @endsection
 ```
 
+By default, the page title will be the app's name, but you can override this by
+passing the variable `$title` to your views.
+
+```php
+return view('my-view', ['title' => 'Lorem ipsum dolor']);
+```
+
+And don't forget to push your description content meta tags.
+
+```php
+@push('head')
+<meta name="description" content="Lorem ipsum dolor sit amet, consectetur.">
+@endpush
+```
+
 If you need to customize the views, then you can run:
 
     php artisan vendor:publish --tag=views --provider="razorbacks\style\laravel\StyleServiceProvider"
