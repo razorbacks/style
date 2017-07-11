@@ -104,7 +104,7 @@ For convenience, this exact template is included for extension as `layout-auth`
 
 If you need to customize the views, then you can run:
 
-    php artisan vendor:publish --provider="razorbacks\style\laravel\StyleServiceProvider"
+    php artisan vendor:publish --tag=views --provider="razorbacks\style\laravel\StyleServiceProvider"
 
 Then they will show up in your `views/vendor/razorbacks` directory.
 Note that they are minified for efficiency, so you will likely want to
@@ -120,6 +120,16 @@ will output:
 ```html
 <link rel="stylesheet" href="https://cdn.example.org/css/uark.3990e4a5bd9002a3753cf135b6096f73.css">
 ```
+
+## Google Analytics
+
+To include the analytics script on all your pages, first publish the configuration file.
+
+    php artisan vendor:publish --tag=config --provider="razorbacks\style\laravel\StyleServiceProvider"
+
+Then set the environment variable `GOOGLE_ANALYTICS_TRACKING_ID`
+
+    GOOGLE_ANALYTICS_TRACKING_ID=UA-XXXXX-Y
 
 ## Default CDN
 
