@@ -254,6 +254,9 @@ tr.odd {
     .navigation-menu {
         font-size: small;
     }
+    .navigation-menu:not(.navbar-right) {
+        margin-left: 150px;
+    }
 }
 @media (max-width: 767px) {
     body {
