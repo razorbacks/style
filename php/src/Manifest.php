@@ -37,7 +37,7 @@ class Manifest
     {
         return static::$MANIFEST_FILE
             ?? static::$MANIFEST_FILE = getenv('RAZORBACKS_STYLE_MANIFEST_FILE')
-            ?: realpath(__DIR__.'/../manifest.json');
+            ?: realpath(__DIR__.'/../../manifest.json');
     }
 
     public static function manifestArray() : array

@@ -23,11 +23,11 @@ class StyleServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__.'/blade/dist', 'razorbacks');
 
         $this->publishes([
-            __DIR__.'/config/razorbacks-style.php' => config_path('razorbacks-style.php'),
+            __DIR__.'/../../laravel/config/razorbacks-style.php' => config_path('razorbacks-style.php'),
         ], 'config');
 
         $this->publishes([
-            __DIR__.'/blade/dist' => resource_path('views/vendor/razorbacks'),
+            __DIR__.'/../../laravel/blade/dist' => resource_path('views/vendor/razorbacks'),
         ], 'views');
     }
 }

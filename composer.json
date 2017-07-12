@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "razorbacks\\style\\": "php/"
+            "razorbacks\\style\\": "php/src/"
         }
     },
     "minimum-stability": "stable",
