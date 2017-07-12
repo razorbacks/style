@@ -20,7 +20,7 @@ class StyleServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__.'/blade/dist', 'razorbacks');
+        $this->loadViewsFrom(__DIR__.'/../../laravel/blade/dist', 'razorbacks');
 
         $this->publishes([
             __DIR__.'/../../laravel/config/razorbacks-style.php' => config_path('razorbacks-style.php'),
