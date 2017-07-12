@@ -1,6 +1,6 @@
 {
   "name": "razorbacks-style",
-  "version": "1.1.0-dev",
+  "version": "1.2.0",
   "description": "template views and style sheets for arkansas.edu",
   "scripts": {
     "dev": "webpack",
