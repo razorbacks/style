@@ -234,28 +234,28 @@ tr.odd {
         margin-top: 115px;
         margin-bottom: 10px;
     }
-}
-@media (max-width:1200px) {
-    #opener .brand {
-        width: 158px;
-        height: 156px;
-    }
-    .navbar {
-        margin-top: 89px;
-    }
-    .walton-name {
-        top: 10px;
-        margin-left: 180px;
-    }
-    .walton-sub-name {
-        top: 50px;
-        margin-left: 180px;
-    }
-    .navigation-menu {
-        font-size: small;
-    }
-    .navigation-menu:not(.navbar-right) {
-        margin-left: 150px;
+    @media (max-width:1200px) {
+        #opener .brand {
+            width: 158px;
+            height: 156px;
+        }
+        .navbar {
+            margin-top: 89px;
+        }
+        .walton-name {
+            top: 10px;
+            margin-left: 180px;
+        }
+        .walton-sub-name {
+            top: 50px;
+            margin-left: 180px;
+        }
+        .navigation-menu {
+            font-size: small;
+        }
+        .navigation-menu:not(.navbar-right) {
+            margin-left: 150px;
+        }
     }
 }
 @media (max-width: 767px) {
