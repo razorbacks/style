@@ -9,7 +9,7 @@
 
     <title>{{ $title or config('app.name') }}</title>
     <link rel="shortcut icon" href="<%= htmlWebpackPlugin.options.cdn %>/images/icons/favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
     <link rel="apple-touch-icon" sizes="180x180" href="<%= htmlWebpackPlugin.options.cdn %>/images/icons/apple-touch-icon.png">
@@ -110,24 +110,27 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="uark">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div id="footer-logo">
+                <div class="col-md-8">
+                    <div class="mast">
                         <a href="https://uark.edu">UNIVERSITY OF ARKANSAS</a>
                     </div>
 
-                    <ul id="footer-global-links" class="list-unstyled">
-                        <li><a href="https://www.uark.edu/admissions/index.php">Admissions</a></li>
-                        <li><a href="https://www.uark.edu/academics/index.php">Academics</a></li>
-                        <li><a href="https://www.uark.edu/campus-life/index.php">Campus Life</a></li>
-                        <li><a href="https://www.uark.edu/research/index.php">Research</a></li>
-                        <li><a href="https://www.uark.edu/athletics/index.php">Athletics</a></li>
-                        <li><a href="https://www.uark.edu/about/index.php">About</a></li>
-                    </ul>
-
-                    <ul id="social-stack" class="nav clearfix list-unstyled">
+                    <div class="links">
+                        <ul class="list-unstyled">
+                            <li><a href="https://www.uark.edu/admissions/index.php">Admissions</a></li>
+                            <li><a href="https://www.uark.edu/academics/index.php">Academics</a></li>
+                            <li><a href="https://www.uark.edu/campus-life/index.php">Campus Life</a></li>
+                            <li><a href="https://www.uark.edu/research/index.php">Research</a></li>
+                            <li><a href="https://www.uark.edu/athletics/index.php">Athletics</a></li>
+                            <li><a href="https://www.uark.edu/about/index.php">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <ul class="social-stack nav clearfix list-unstyled">
                         <li>
                             <a href="https://www.facebook.com/UofArkansas">
                                 <i class="fa fa-facebook"></i>
@@ -153,12 +156,6 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://plus.google.com/104159281704656057709" rel="publisher">
-                                <i class="fa fa-google-plus"></i>
-                                <span class="sr-only">Connect with us on Google+</span>
-                            </a>
-                        </li>
-                        <li>
                             <a href="https://pinterest.com/uofaadmissions/">
                                 <i class="fa fa-pinterest"></i>
                                 <span class="sr-only">Join us on Pinterest</span>
@@ -170,14 +167,11 @@
                                 <span class="sr-only">Connect with us on LinkedIn</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="https://foursquare.com/uarkansas">
-                                <i class="fa fa-foursquare"></i>
-                                <span class="sr-only">Find us on FourSquare</span>
-                            </a>
-                        </li>
                     </ul>
+
                 </div>
+                <hr>
+                <p id="privacy-policy"><small><a href="https://www.uark.edu/privacy-policy.php">Privacy Policy</a></small></p>
             </div>
         </div>
     </footer>
