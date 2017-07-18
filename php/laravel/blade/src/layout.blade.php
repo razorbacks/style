@@ -54,7 +54,7 @@
 
             <div id="navbar" class="collapse navbar-collapse">
 
-                <ul class='top_nav nav navbar-nav navigation-menu'>
+                <ul class="nav navbar-nav navigation-menu">
 
                     @yield('navbar')
 
