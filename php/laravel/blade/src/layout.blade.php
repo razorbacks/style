@@ -72,11 +72,11 @@
         </div><!--/.container -->
     </nav>
 
-    <div id="page-content-container" class='container'>
+    <main class="container">
 
         @yield('content')
 
-    </div>
+    </main>
 
     <footer class="wcob gray">
         <div class="container">
