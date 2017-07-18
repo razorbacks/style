@@ -78,7 +78,7 @@
 
     </div>
 
-    <section class="gray" id="section-footer">
+    <footer class="gray">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-md-push-6 col-md-offset-3">
@@ -110,7 +110,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
 
     <footer class="uark">
         <div class="container">

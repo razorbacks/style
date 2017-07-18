@@ -78,7 +78,7 @@ body {
     margin-top: -5px;
 }
 
-section.gray {
+.gray {
     position:relative;
     overflow:hidden;
     background-color: $section-background-gray;
@@ -87,10 +87,10 @@ section.gray {
     margin-top:15px;
     margin-bottom: 0;
 }
-section.gray > .container > .row:first-child:before,
-section.gray > .container > .row:first-child:after,
-section.gray:before,
-section.gray:after {
+.gray > .container > .row:first-child:before,
+.gray > .container > .row:first-child:after,
+.gray:before,
+.gray:after {
     pointer-events: none;
     position: absolute;
     content: "";
@@ -108,8 +108,8 @@ section.gray:after {
     -ms-transform: rotate(-.8deg);
     transform: rotate(-.8deg);
 }
-section.gray > .container > .row:first-child:after,
-section.gray:before {
+.gray > .container > .row:first-child:after,
+.gray:before {
     -webkit-transform: rotate(.8deg);
     -moz-transform: rotate(.8deg);
     -o-transform: rotate(.8deg);
@@ -117,8 +117,8 @@ section.gray:before {
     transform: rotate(.8deg);
     right: 2px;
 }
-section.gray:before,
-section.gray:after {
+.gray:before,
+.gray:after {
     left: 4px;
     top: auto;
     bottom: -21px;
@@ -127,12 +127,12 @@ section.gray:after {
     -moz-box-shadow: 0 -5px 11px $section-background-shadow;
     box-shadow: 0 -5px 11px $section-background-shadow;
 }
-section.gray:after {
+.gray:after {
     right: 4px;
     left: auto;
 }
 
-footer {
+footer.uark {
     background-color: $html-background-color;
     color: white;
     font-weight: 300;
@@ -146,9 +146,9 @@ footer.uark hr {
     border-bottom: none;
     clear: both;
 }
-footer a,
-footer a:hover,
-footer a:focus {
+footer.uark a,
+footer.uark a:hover,
+footer.uark a:focus {
     color: white;
 }
 #footer-walton-name > a {
@@ -169,8 +169,8 @@ footer.uark .links>ul>li {
 footer.uark .social-stack li i:hover {
     text-shadow: 0 0 4px white;
 }
-footer .nav > li > a:hover,
-footer .nav > li > a:focus {
+footer.uark .nav > li > a:hover,
+footer.uark .nav > li > a:focus {
     background-color: transparent;
 }
 footer.uark .links>ul,
@@ -308,7 +308,7 @@ tr.odd {
     }
 }
 @media (max-width: 991px) {
-    footer {
+    footer.uark {
         text-align: center;
     }
     footer.uark .social-stack {
