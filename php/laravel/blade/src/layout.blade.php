@@ -30,12 +30,14 @@
         @include ('razorbacks::notice-banner')
     @endunless
 
-    <div id="header-bg"></div>
-    <div class="container" id="opener" role="banner">
-        <a class="brand" href="https://www.uark.edu/">University of Arkansas</a>
-        <span id="site-heading" class="walton-name"><a href="/">{{ config('app.name') }}</a></span>
-        <span class="walton-sub-name"><a href="https://walton.uark.edu">The Sam M. Walton College of Business</a></span>
-    </div><!-- /#opener banner -->
+    <header>
+        <div id="header-bg"></div>
+        <div class="container" id="opener" role="banner">
+            <a class="brand" href="https://www.uark.edu/">University of Arkansas</a>
+            <span id="site-heading" class="walton-name"><a href="/">{{ config('app.name') }}</a></span>
+            <span class="walton-sub-name"><a href="https://walton.uark.edu">The Sam M. Walton College of Business</a></span>
+        </div><!-- /#opener banner -->
+    </header>
 
     <nav class="navbar navbar-default">
         <div class="container">
@@ -47,18 +49,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a id='site_title_brand' class='navbar-brand' href='/'></a>
+                <a id='site-title-brand' class='navbar-brand' href='/'></a>
             </div><!-- /.navbar-header -->
 
             <div id="navbar" class="collapse navbar-collapse">
 
-                <ul id='top_navigation_menu' class='top_nav nav navbar-nav navigation-menu'>
+                <ul class='top_nav nav navbar-nav navigation-menu'>
 
                     @yield('navbar')
 
                 </ul>
 
-                <div id='login_nav_div' class='top_nav navbar-right pull-right-md pull-left-xs'>
+                <div class='top_nav navbar-right pull-right-md pull-left-xs'>
                     <ul class="nav navbar-nav navbar-right navigation-menu">
 
                         @yield('navbar-right')
