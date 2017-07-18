@@ -193,13 +193,17 @@ footer.uark .social-stack.nav>li>a {
 footer.uark .social-stack li {
     float: left;
 }
-.walton-social-media {
-    display:inline-block;
-}
-.walton-social-media a,
-.walton-social-media a:hover {
+footer.wcob .social-stack a,
+footer.wcob .social-stack a:hover {
     color: #b7b7b7;
     text-decoration: none;
+}
+footer.wcob .links {
+    text-align: center;
+}
+footer.wcob .logo {
+    display: flex;
+    justify-content: flex-end;
 }
 #privacy-policy {
     text-align: center;
@@ -317,6 +321,9 @@ tr.odd {
     footer.uark .links>ul>li {
         margin-left: 5px;
         margin-right: 5px;
+    }
+    footer.wcob .logo {
+        justify-content: center;
     }
 }
 @media (min-width: 992px) {

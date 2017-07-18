@@ -78,13 +78,13 @@
 
     </div>
 
-    <footer class="gray">
+    <footer class="wcob gray">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-md-push-6 col-md-offset-3">
-                    <p>
+                <div class="col-md-4">
+                    <div class="links">
                         <a href="https://walton.uark.edu/directory/" class="btn navbar-btn btn-default">Walton Directory</a>
-                        <span class="walton-social-media">
+                        <div class="social-stack">
                             <a title="Facebook" href="https://www.facebook.com/WaltonCollege">
                                 <i class="fa fa-3x fa-facebook-square"></i>
                             </a>
@@ -97,16 +97,18 @@
                             <a title="Instagram" href="https://instagram.com/uawaltoncollege/">
                                 <i class="fa fa-3x fa-instagram"></i>
                             </a>
-                        </span>
-                    </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 col-md-pull-6">
-                    <a href="https://walton.uark.edu">
-                        <img alt="Sam M. Walton College of Business: AACSB Accredited"
-                            class="img img-responsive"
-                            src="<%= htmlWebpackPlugin.options.cdn %>/images/wc-footer-logo.jpg"
-                        >
-                    </a>
+                <div class="col-md-8">
+                    <div class="logo">
+                        <a href="https://walton.uark.edu">
+                            <img alt="The Sam M. Walton College of Business is accredited by the Association to Advance Collegiate Schools of Business (AACSB)"
+                                class="img img-responsive"
+                                src="<%= htmlWebpackPlugin.options.cdn %>/images/wc-footer-logo.jpg"
+                            >
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
