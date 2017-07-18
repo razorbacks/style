@@ -19,11 +19,12 @@
     <link rel="mask-icon" href="<%= htmlWebpackPlugin.options.cdn %>/images/icons/safari-pinned-tab.svg" color="#9d2235">
     <meta name="msapplication-config" content="<%= htmlWebpackPlugin.options.cdn %>/images/icons/browserconfig.xml" />
     <meta name="theme-color" content="#9d2235">
-
-</head>
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css %>">
 
     @yield('head')
     @stack('head')
+
+</head>
 
 <body>
     @unless (App::Environment() === 'production')
@@ -188,6 +189,8 @@
         <script src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js'></script>
     <![endif]-->
 
+    <script src="<%= htmlWebpackPlugin.files.js %>"></script>
+
     <script>
         window.Laravel = <?php echo json_encode([
             'csrfToken' => csrf_token(),
@@ -202,9 +205,9 @@
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
     @endunless
+
+    @yield('scripts')
+    @stack('scripts')
+
 </body>
-
-@yield('scripts')
-@stack('scripts')
-
 </html>

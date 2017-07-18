@@ -40,6 +40,7 @@ module.exports = {
             cdn: publicPath,
             template: './php/laravel/blade/src/layout.blade.php',
             filename: 'blade/layout.blade.php',
+            inject: false,
             minify: {
                 collapseWhitespace: inProduction,
                 removeComments: inProduction
