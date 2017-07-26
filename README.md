@@ -165,7 +165,7 @@ Then set the environment variable `GOOGLE_ANALYTICS_TRACKING_ID`
 The default CDN is https://cdn.walton.uark.edu and it may be overridden by
 setting the environment variable `RAZORBACKS_STYLE_CDN`
 
-    npm run dev
+    RAZORBACKS_STYLE_CDN=https://mydevbox.example.com npm run dev
 
 For production, change it in [`release.bash`][13]
 
