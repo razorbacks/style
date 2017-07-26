@@ -1,4 +1,4 @@
-$(".top_nav").find("a").each(function(){
+$(".navigation-menu").find("a").each(function(){
     var a = $(this);
     if ( a.attr("href") == window.location.href ) {
         a.parent().addClass("active");
