@@ -58,7 +58,6 @@ body {
     border-radius: 0;
     min-height: 57px;
     max-height: 57px;
-    margin-bottom: 30px;
 }
 #navbar {
     border-color: transparent;
@@ -262,7 +261,7 @@ tr.odd {
     }
     .navbar {
         margin-top: 115px;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
     @media (max-width:1200px) {
         #opener .brand {
