@@ -49,11 +49,18 @@ Extend the `razorbacks::layout` view and the following sections are available:
 4. `head` ([section][12] and [push][11])
 5. `scripts` ([section][12] and [push][11])
 
-```html
+Create a master page layout with your global elements,
+e.g. `layouts/app.blade.php`
+
+```php
 @extends('razorbacks::layout')
 
 @section('head')
-    <link rel="stylesheet" href="https://example.com/style.css">
+    <!--
+        these elements will appear on all views,
+        unless explicitly overridden with a new @section('head')
+    -->
+    <link rel="stylesheet" href="/css/global.css">
 @endsection
 
 @section('navbar')
@@ -64,14 +71,34 @@ Extend the `razorbacks::layout` view and the following sections are available:
     <li><a href="https://example.com">Right</a></li>
 @endsection
 
+@section('scripts')
+    <!--
+        these scripts will appear on all views,
+        unless explicitly overridden with a new @section('scripts')
+    -->
+    <script src="/js/global.js"></script>
+@endsection
+```
+
+Then extend this layout for specific views.
+
+```php
+@extends('layouts.app')
+
+@push('head')
+    <!-- @push these elements onto the current view -->
+    <link rel="stylesheet" href="/css/local.css">
+@endpush
+
 @section('content')
     <h1>hello world</h1>
     <p>here is some content</p>
 @endsection
 
-@section('scripts')
-    <script src="https://example.com/script.js"></script>
-@endsection
+@push('scripts')
+    <!-- @push these scripts onto the current view -->
+    <script src="/js/local.js"></script>
+@endpush
 ```
 
 ![example layout screenshot][10]
@@ -79,7 +106,7 @@ Extend the `razorbacks::layout` view and the following sections are available:
 If you would like to use the default laravel authentication scaffolding,
 then there is a `navbar-auth` partial included for the login/logout links.
 
-```html
+```php
 @extends('razorbacks::layout')
 
 @section('navbar-right')
@@ -89,7 +116,7 @@ then there is a `navbar-auth` partial included for the login/logout links.
 
 For convenience, this exact template is included for extension as `layout-auth`
 
-```html
+```php
 @extends('razorbacks::layout-auth')
 
 @section('navbar')
@@ -140,7 +167,7 @@ Note that they are minified for efficiency, so you will likely want to
 decompress them for development. Also the content hashes are hard-coded,
 so use the [`Manifest` class][1] to get references to versioned assets.
 
-```html
+```php
 {!! razorbacks\style\Manifest::css() !!}
 ```
 
