@@ -177,6 +177,13 @@ will output:
 <link rel="stylesheet" href="https://cdn.example.org/css/uark.3990e4a5bd9002a3753cf135b6096f73.css">
 ```
 
+## JavaScript
+
+There are some features enabled out of the box for common needs.
+
+A `textarea` is automatically expanded to fit text.
+To disable, add the class `no-autoexpand` to the element or any parent.
+
 ## Google Analytics
 
 To include the analytics script on all your pages, first publish the configuration file.

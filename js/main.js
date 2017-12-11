@@ -6,12 +6,16 @@ $(".navigation-menu").find("a").each(function(){
 });
 
 $(function(){
-    $('textarea').each(function(){
+    $('textarea:not(.no-autoexpand)').each(function(){
         var ta = $(this);
-        ta.keyup(function(){
-            while(ta.outerHeight() < this.scrollHeight + parseFloat(ta.css('borderTopWidth')) + parseFloat(ta.css('borderBottomWidth'))) {
-                ta.height(ta.height()+1);
-            };
-        })
+        if (!ta.parents().hasClass('no-autoexpand')) {
+            ta.keyup(function(){
+                var top = parseFloat(ta.css('borderTopWidth'));
+                var bottom = parseFloat(ta.css('borderBottomWidth'));
+                while(ta.outerHeight() < this.scrollHeight + top + bottom) {
+                    ta.height(ta.height()+1);
+                };
+            })
+        }
     });
 });
